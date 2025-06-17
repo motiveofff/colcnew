@@ -155,12 +155,12 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Фотогалерея</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                'https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=600',
-                'https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=600',
-                'https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&w=600',
-                'https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=600',
-                'https://images.pexels.com/photos/4167541/pexels-photo-4167541.jpeg?auto=compress&cs=tinysrgb&w=600',
-                'https://images.pexels.com/photos/4021769/pexels-photo-4021769.jpeg?auto=compress&cs=tinysrgb&w=600'
+                'https://www.mos.ru/upload/newsfeed/articles/0ee86fbc1ef41c1ee466e07b0d9a0129/250610_Operatsii_do_i_posle_rozhdeniya_GKB_Filatova_016.jpg',
+                'https://static2.banki.ru/ugc/ab/32/64/43/10978388.jpg',
+                'https://src.kleos.ru/file/org_image/2021/5/19/file_182dv.jpg',
+                'https://onkolog.med.cap.ru/UserFiles21/main/Materials/2023/07/27/blobid1690441298295.jpg',
+                'https://i.ytimg.com/vi/46n-4ygw-jE/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgRSg7MA8=&amp;rs=AOn4CLBViuiOuy5MpJV_0uf-4HU9hK1NdA',
+                'https://thumbs.dreamstime.com/b/доктор-успешный-104121694.jpg'
               ].map((image, index) => (
                 <div key={index} className="aspect-video overflow-hidden rounded-lg shadow-lg">
                   <img

@@ -5,7 +5,7 @@ export const clinics: Clinic[] = [
     id: '1',
     name: 'ГОБУЗ "КОЛЬСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"',
     description: 'Центральная районная больница, предоставляющая полный спектр медицинских услуг',
-    image: 'https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://murmansk.ru/storage/publication/3151a/5157_NpRfV7rDmgRdG69bl5Vd.jpg',
     address: 'г. Кола, ул. Центральная, 15',
     phone: '+7 (815) 553-10-20',
     specialties: ['Терапия', 'Хирургия', 'Педиатрия', 'Кардиология'],
@@ -14,7 +14,7 @@ export const clinics: Clinic[] = [
         id: '1',
         name: 'Иванов Сергей Петрович',
         specialty: 'Главный врач, кардиолог',
-        image: 'https://images.pexels.com/photos/612807/pexels-photo-612807.jpeg?auto=compress&cs=tinysrgb&w=400',
+        image: 'https://www.mk.ru/upload/entities/2024/08/05/14/articles/detailPicture/60/69/f4/e7/c9077f882bbfeb86a769c945febd450b.jpg',
         experience: '15 лет',
         education: 'СЗГМУ им. И.И. Мечникова',
         description: 'Опытный кардиолог с многолетним стажем работы'
@@ -25,7 +25,7 @@ export const clinics: Clinic[] = [
     id: '2',
     name: 'Поликлиника №1',
     description: 'Амбулаторно-поликлиническое учреждение',
-    image: 'https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://m.severpost.ru/docs/upload/2025/01/croppedImg_868963032.jpeg',
     address: 'г. Кола, ул. Советская, 28',
     phone: '+7 (815) 553-15-30',
     specialties: ['Терапия', 'Педиатрия', 'Неврология', 'Офтальмология'],
@@ -101,7 +101,7 @@ export const slides: SlideItem[] = [
     id: '1',
     title: 'Современная диагностика',
     description: 'Используем передовое медицинское оборудование для точной диагностики',
-    image: 'https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://blog.checkpoint.com/wp-content/uploads/2021/06/iStock-1180547365.jpg',
     buttonText: 'Узнать больше',
     link: '/services'
   },
@@ -109,7 +109,7 @@ export const slides: SlideItem[] = [
     id: '2',
     title: 'Профессиональные врачи',
     description: 'Наша команда - это высококвалифицированные специалисты с большим опытом',
-    image: 'https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://cdn.mknc.ru/contents/albums/preview/2000x2000/14000/14742/preview.jpg',
     buttonText: 'Наши врачи',
     link: '/doctors'
   },
@@ -117,7 +117,7 @@ export const slides: SlideItem[] = [
     id: '3',
     title: 'Забота о пациентах',
     description: 'Индивидуальный подход к каждому пациенту и комфортные условия лечения',
-    image: 'https://images.pexels.com/photos/4167541/pexels-photo-4167541.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://img.gazeta.ru/files3/60/17402060/shutterstock_128-pic_32ratio_900x600-900x600-72299.jpg',
     buttonText: 'Записаться',
     link: '/appointment'
   }
