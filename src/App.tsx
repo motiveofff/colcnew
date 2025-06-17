@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -7,8 +7,8 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ClinicDetailPage from './pages/ClinicDetailPage';
+import CabinetPage from './pages/CabinetPage';
 
-// Placeholder components for remaining pages
 const DoctorsPage = () => (
   <div className="min-h-screen bg-gray-50 py-16">
     <div className="container mx-auto px-4 text-center">
@@ -55,11 +55,30 @@ const ContactsPage = () => (
 );
 
 function App() {
+  const [currentUser, setCurrentUser] = useState<any>(null);
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      setCurrentUser(JSON.parse(storedUser));
+    }
+  }, []);
+
+  const handleLogin = (userData: any) => {
+    localStorage.setItem('user', JSON.stringify(userData));
+    setCurrentUser(userData);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('user');
+    setCurrentUser(null);
+  };
+
   return (
     <LanguageProvider>
       <Router>
         <div className="min-h-screen bg-gray-50">
-          <Header />
+          <Header onLogin={handleLogin} />
           <main>
             <Routes>
               <Route path="/" element={<HomePage />} />
@@ -71,6 +90,16 @@ function App() {
               <Route path="/specialists" element={<SpecialistsPage />} />
               <Route path="/legal" element={<LegalPage />} />
               <Route path="/contacts" element={<ContactsPage />} />
+              <Route
+                path="/cabinet"
+                element={
+                  currentUser ? (
+                    <CabinetPage user={currentUser} onLogout={handleLogout} />
+                  ) : (
+                    <Navigate to="/" replace />
+                  )
+                }
+              />
             </Routes>
           </main>
           <Footer />

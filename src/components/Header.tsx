@@ -5,7 +5,11 @@ import { useLanguage } from '../contexts/LanguageContext';
 import AppointmentModal from './AppointmentModal';
 import AuthModal from './AuthModal';
 
-export default function Header() {
+interface HeaderProps {
+  onLogin: (userData: any) => void;
+}
+
+export default function Header({ onLogin }: HeaderProps) {
   const { language, setLanguage, t } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAppointmentOpen, setIsAppointmentOpen] = useState(false);
@@ -162,10 +166,11 @@ export default function Header() {
         isOpen={isAppointmentOpen}
         onClose={() => setIsAppointmentOpen(false)}
       />
-      
+
       <AuthModal
         isOpen={isAuthOpen}
         onClose={() => setIsAuthOpen(false)}
+        onLogin={onLogin}
       />
     </>
   );
