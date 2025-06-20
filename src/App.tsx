@@ -8,15 +8,9 @@ import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ClinicDetailPage from './pages/ClinicDetailPage';
 import CabinetPage from './pages/CabinetPage';
+import DoctorsPage from './pages/DoctorsPage';
 
-const DoctorsPage = () => (
-  <div className="min-h-screen bg-gray-50 py-16">
-    <div className="container mx-auto px-4 text-center">
-      <h1 className="text-4xl font-bold text-gray-800 mb-4">Наши врачи</h1>
-      <p className="text-gray-600">Страница в разработке</p>
-    </div>
-  </div>
-);
+
 
 const PatientsPage = () => (
   <div className="min-h-screen bg-gray-50 py-16">
@@ -86,6 +80,7 @@ function App() {
               <Route path="/clinic/:id" element={<ClinicDetailPage />} />
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/doctors" element={<DoctorsPage />} />
+
               <Route path="/patients" element={<PatientsPage />} />
               <Route path="/specialists" element={<SpecialistsPage />} />
               <Route path="/legal" element={<LegalPage />} />

@@ -72,6 +72,31 @@ export const services: Service[] = [
   }
 ];
 
+export const doctors = [
+  {
+    id: 1,
+    name: 'Иванов Иван Иванович',
+    specialty: 'Кардиолог',
+    experience: 12,
+    description: 'Специализируется на диагностике и лечении сердечно-сосудистых заболеваний.',
+    phone: '+7 (812) 123-45-67',
+    email: 'ivanov@clinic.ru',
+    photo: 'https://avatars.dzeninfra.ru/get-zen_doc/3655132/pub_620e354c466d9324d0b6b6de_620e39a18278d931e5652202/scale_1200'
+  },
+  {
+    id: 2,
+    name: 'Петрова Мария Сергеевна',
+    specialty: 'Педиатр',
+    experience: 8,
+    description: 'Опытный педиатр, заботится о здоровье детей с рождения.',
+    phone: '+7 (812) 234-56-78',
+    email: 'petrova@clinic.ru',
+    photo: 'https://avatars.mds.yandex.net/i?id=01081836b86b5aab8787de66ab5c1057_l-8259609-images-thumbs&n=13'
+  },
+  // ...
+];
+
+
 export const reviews: Review[] = [
   {
     id: '1',
